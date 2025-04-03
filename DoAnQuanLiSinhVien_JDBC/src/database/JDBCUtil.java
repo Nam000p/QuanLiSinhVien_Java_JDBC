@@ -14,9 +14,9 @@ public class JDBCUtil {
 			// Dang ki MS SQL Server voi DriverManager
 			DriverManager.registerDriver(new SQLServerDriver());
 			// Cac thong so
-			String url = "jdbc:sqlserver://DESKTOP-LBB9N45\\SQLEXPRESS:1433;databaseName=QuanLiSinhVien_Java;encrypt=true;trustServerCertificate=true;";
-			String username = "sa";
-			String password = "SQL123@";
+			String url = "jdbc:sqlserver://localhost:1433;databaseName=<yourdatabasename>;encrypt=true;trustServerCertificate=true;";
+			String username = "<your username>";
+			String password = "<your password>";
 			// Tao ket noi
 			c = DriverManager.getConnection(url,username,password);
 		} catch (SQLException e) {
